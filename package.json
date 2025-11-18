@@ -1,0 +1,44 @@
+{
+  "name": "dressly-corpsite",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev & npx next-video sync -w --dir src/assets/motions",
+    "build": "next build",
+    "start": "next start",
+    "gql:generate": "graphql-codegen --config codegen.yml",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.13.8",
+    "classnames": "^2.5.1",
+    "graphql": "^16.11.0",
+    "next": "15.5.2",
+    "next-video": "^2.3.0",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "react-hook-form": "^7.63.0",
+    "reset-css": "^5.0.2",
+    "swiper": "^8.4.7"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@graphql-codegen/cli": "^6.0.0",
+    "@graphql-codegen/client-preset": "^5.0.2",
+    "@graphql-codegen/schema-ast": "^5.0.0",
+    "@graphql-codegen/typescript": "^5.0.1",
+    "@graphql-codegen/typescript-operations": "^5.0.1",
+    "@graphql-codegen/typescript-react-apollo": "^4.3.3",
+    "@graphql-codegen/typescript-react-query": "^6.1.1",
+    "@svgr/webpack": "^8.1.0",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.5.2",
+    "prettier": "^3.6.2",
+    "sass": "^1.92.0",
+    "typescript": "^5.9.2",
+    "url-loader": "^4.1.1"
+  }
+}
